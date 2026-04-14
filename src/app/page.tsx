@@ -7,8 +7,9 @@ import { UseCases } from "@/components/landing/use-cases"
 import { ProductPlacement } from "@/components/landing/product-placement"
 import { Formats } from "@/components/landing/formats"
 import { Proof } from "@/components/landing/proof"
-import { CtaSection } from "@/components/landing/cta-section"
+import { ContactForm } from "@/components/landing/contact-form"
 import { Footer } from "@/components/landing/footer"
+import { CookieBanner } from "@/components/landing/cookie-banner"
 
 export default function LandingPage() {
   return (
@@ -23,9 +24,10 @@ export default function LandingPage() {
         <ProductPlacement />
         <Formats />
         <Proof />
-        <CtaSection />
+        <ContactForm />
       </main>
       <Footer />
+      <CookieBanner />
     </>
   )
 }
