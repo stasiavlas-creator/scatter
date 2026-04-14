@@ -120,18 +120,34 @@ export function WhyPinterest() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className={cn("mt-14 text-center", visible && "animate-fade-in-up animation-delay-700")}>
+        {/* Bottom: speed + free trial */}
+        <div className={cn("mt-14 flex flex-wrap justify-center gap-4", visible && "animate-fade-in-up animation-delay-700")}>
+          {/* Launch speed */}
+          <div className="inline-flex items-center gap-3 rounded-2xl bg-white border border-gray-100 px-6 py-4 shadow-sm">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--lp-coral)]/10">
+              <TrendingUp className="size-5 text-[var(--lp-coral)]" />
+            </div>
+            <div className="text-left">
+              <p className="text-sm font-semibold text-[var(--lp-graphite)]">
+                Launch in 24 hours
+              </p>
+              <p className="text-xs text-gray-400">
+                200+ pins posted daily across the network
+              </p>
+            </div>
+          </div>
+
+          {/* Free trial */}
           <div className="inline-flex items-center gap-3 rounded-2xl bg-white border border-gray-100 px-6 py-4 shadow-sm">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--lp-green)]/15">
               <Clock className="size-5 text-[var(--lp-olive)]" />
             </div>
             <div className="text-left">
               <p className="text-sm font-semibold text-[var(--lp-graphite)]">
-                Start with a free 7-day placement
+                Free 7-day trial placement
               </p>
               <p className="text-xs text-gray-400">
-                See the results before committing to a paid package
+                See the results before committing
               </p>
             </div>
             <a

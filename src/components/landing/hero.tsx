@@ -86,21 +86,28 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Mini stats */}
-            <div className="mt-14 grid grid-cols-3 gap-6 animate-fade-in-up animation-delay-400">
-              <div>
-                <p className="text-2xl font-bold text-[var(--lp-graphite)]">
-                  <Counter target={10990000} />
-                </p>
-                <p className="text-sm text-gray-400 mt-0.5">Total audience</p>
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-[var(--lp-graphite)]">75.3%</p>
-                <p className="text-sm text-gray-400 mt-0.5">Female audience</p>
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-[var(--lp-graphite)]">25–34</p>
-                <p className="text-sm text-gray-400 mt-0.5">Key age group</p>
+            {/* Audience stats strip */}
+            <div className="mt-14 animate-fade-in-up animation-delay-500">
+              <p className="text-xs text-gray-400 uppercase tracking-wider mb-4">Network reach</p>
+              <div className="grid grid-cols-4 gap-5">
+                <div>
+                  <p className="text-2xl font-bold text-[var(--lp-graphite)]">
+                    <Counter target={10990000} />
+                  </p>
+                  <p className="text-sm text-gray-400 mt-0.5">Total audience</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-[var(--lp-graphite)]">132</p>
+                  <p className="text-sm text-gray-400 mt-0.5">Active accounts</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-[var(--lp-graphite)]">75.3%</p>
+                  <p className="text-sm text-gray-400 mt-0.5">Female audience</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-bold text-[var(--lp-graphite)]">25–34</p>
+                  <p className="text-sm text-gray-400 mt-0.5">Key age group</p>
+                </div>
               </div>
             </div>
           </div>

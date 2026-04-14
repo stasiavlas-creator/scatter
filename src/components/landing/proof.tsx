@@ -8,9 +8,9 @@ import { TrendingUp, Eye, Users as UsersIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const metrics = [
-  { icon: Eye, value: "2M+", label: "Daily impressions", sublabel: "Average across network", color: "#ED6C43" },
-  { icon: UsersIcon, value: "10.99M", label: "Total audience", sublabel: "Combined followers", color: "#BEB050" },
-  { icon: TrendingUp, value: "+12.4%", label: "Weekly growth", sublabel: "Network average", color: "#d4c46a" },
+  { icon: Eye, value: "2M+", label: "Daily impressions", sublabel: "Organic reach across network", color: "#ED6C43" },
+  { icon: UsersIcon, value: "10.99M", label: "Total reach", sublabel: "Combined audience size", color: "#BEB050" },
+  { icon: TrendingUp, value: "3.8%", label: "Avg. engagement rate", sublabel: "Saves, clicks, close-ups", color: "#d4c46a" },
 ]
 
 const growthData = [
@@ -78,9 +78,9 @@ export function Proof() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
         <SectionHeader
-          tag="Metrics"
-          title="Performance you can measure"
-          subtitle="Real data from our active network — not projections."
+          tag="Reach & Engagement"
+          title="Real numbers from our network"
+          subtitle="Aggregated data across 132 active accounts — not projections."
           visible={visible}
           tagColor="#d4c46a"
         />
@@ -105,8 +105,8 @@ export function Proof() {
         <div className={cn("rounded-2xl border border-gray-100 bg-white p-6 lg:p-8 shadow-sm mb-8", visible && "animate-fade-in-up animation-delay-200")}>
           <div className="flex items-center justify-between mb-6">
             <div>
-              <h3 className="text-lg font-semibold text-[var(--lp-graphite)]">Impression growth</h3>
-              <p className="text-sm text-gray-400">Last 12 weeks</p>
+              <h3 className="text-lg font-semibold text-[var(--lp-graphite)]">Reach growth</h3>
+              <p className="text-sm text-gray-400">Weekly impressions, last 12 weeks</p>
             </div>
             <div className="flex items-center gap-1.5 text-sm text-[var(--lp-green-dark)] font-medium">
               <TrendingUp className="size-4" />
