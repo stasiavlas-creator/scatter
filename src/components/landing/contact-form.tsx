@@ -6,6 +6,16 @@ import { SectionHeader } from "./section-header"
 import { Send, CheckCircle } from "lucide-react"
 import { cn } from "@/lib/utils"
 
+const GOOGLE_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdNVgD_rkBnd0I8EKIpw2fdPpKHSuPZJ67qCkguoqqazZBq1A/formResponse"
+
+const ENTRY_IDS = {
+  name: "entry.1316750978",
+  email: "entry.218384712",
+  productUrl: "entry.1061708772",
+  message: "entry.713593944",
+}
+
 const btnBase =
   "inline-flex shrink-0 items-center justify-center rounded-xl text-sm font-medium whitespace-nowrap transition-all select-none active:translate-y-px"
 
@@ -14,14 +24,29 @@ export function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setLoading(true)
-    // Simulate submission — replace with real API endpoint
-    setTimeout(() => {
-      setLoading(false)
-      setSubmitted(true)
-    }, 1000)
+
+    const form = e.currentTarget
+    const data = new FormData()
+    data.append(ENTRY_IDS.name, (form.elements.namedItem("name") as HTMLInputElement).value)
+    data.append(ENTRY_IDS.email, (form.elements.namedItem("email") as HTMLInputElement).value)
+    data.append(ENTRY_IDS.productUrl, (form.elements.namedItem("product_url") as HTMLInputElement).value)
+    data.append(ENTRY_IDS.message, (form.elements.namedItem("message") as HTMLTextAreaElement).value)
+
+    try {
+      await fetch(GOOGLE_FORM_URL, {
+        method: "POST",
+        body: data,
+        mode: "no-cors",
+      })
+    } catch {
+      // Google Forms returns opaque response with no-cors, submission still works
+    }
+
+    setLoading(false)
+    setSubmitted(true)
   }
 
   return (
