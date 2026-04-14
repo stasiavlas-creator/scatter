@@ -1,5 +1,3 @@
-import { Logo } from "./logo"
-
 export function Footer() {
   return (
     <footer className="border-t border-[var(--lp-gray-mid)] bg-white">
@@ -26,12 +24,9 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Pinscaler
           </p>
 
-          {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <span className="text-sm font-semibold tracking-tight text-[var(--lp-graphite)]">
-              Pinscaler
-            </span>
-            <Logo />
+          {/* Text logo */}
+          <a href="#" className="text-sm font-bold tracking-tight text-[var(--lp-graphite)]">
+            Pinscaler
           </a>
         </div>
       </div>

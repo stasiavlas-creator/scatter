@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
-import { Logo } from "./logo"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
@@ -37,11 +36,8 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Left: Logo */}
-          <a href="#" className="flex items-center gap-2.5">
-            <Logo />
-            <span className="text-lg font-semibold tracking-tight text-[var(--lp-graphite)]">
-              Pinscaler
-            </span>
+          <a href="#" className="text-xl font-bold tracking-tight text-[var(--lp-graphite)]">
+            Pinscaler
           </a>
 
           {/* Center: Nav links (desktop) */}
