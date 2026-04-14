@@ -16,20 +16,20 @@ export function Footer() {
             <a href="#formats" className="text-sm text-gray-400 hover:text-gray-600 transition-colors">
               Formats
             </a>
-            <a href="mailto:hello@scatter.so" className="text-sm text-gray-400 hover:text-gray-600 transition-colors">
+            <a href="mailto:hello@pinscaler.com" className="text-sm text-gray-400 hover:text-gray-600 transition-colors">
               Contact
             </a>
           </nav>
 
           {/* Copyright */}
           <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Scatter
+            &copy; {new Date().getFullYear()} Pinscaler
           </p>
 
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <span className="text-sm font-semibold tracking-tight text-[var(--lp-graphite)]">
-              Scatter
+              Pinscaler
             </span>
             <Logo />
           </a>

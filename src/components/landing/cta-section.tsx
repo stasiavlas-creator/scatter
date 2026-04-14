@@ -31,7 +31,7 @@ export function CtaSection() {
 
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <a
-                href="mailto:hello@scatter.so"
+                href="mailto:hello@pinscaler.com"
                 className={cn(
                   btnBase,
                   "bg-[var(--lp-blue)] hover:bg-[var(--lp-blue-dark)] text-white h-12 px-8 text-base gap-2 shadow-lg"
@@ -41,7 +41,7 @@ export function CtaSection() {
                 <ArrowRight className="size-4" />
               </a>
               <a
-                href="mailto:hello@scatter.so"
+                href="mailto:hello@pinscaler.com"
                 className={cn(
                   btnBase,
                   "h-12 px-8 text-base border border-white/30 text-white hover:bg-white/10"

@@ -91,7 +91,7 @@ export function ProductPlacement() {
                 <p className="text-sm font-medium text-[var(--lp-graphite)]">
                   Retro mushroom lamp for your living room
                 </p>
-                <p className="text-xs text-gray-400 mt-1">scatter.so</p>
+                <p className="text-xs text-gray-400 mt-1">pinscaler.com</p>
               </div>
             </div>
           </div>

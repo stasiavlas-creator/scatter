@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Scatter — Scale Your Reach on Pinterest',
+  title: 'Pinscaler — Scale Your Reach on Pinterest',
   description: 'Scalable Pinterest growth through curated content placement. 2M+ daily impressions across 132 accounts.',
 }
 

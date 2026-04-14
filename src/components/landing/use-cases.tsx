@@ -50,7 +50,7 @@ export function UseCases() {
         <SectionHeader
           tag="Use cases"
           title="Built for growth teams"
-          subtitle="Whether you're testing or scaling, Scatter delivers measurable results."
+          subtitle="Whether you're testing or scaling, Pinscaler delivers measurable results."
           visible={visible}
           tagColor="#ED6C43"
         />

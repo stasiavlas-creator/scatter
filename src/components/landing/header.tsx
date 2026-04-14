@@ -40,7 +40,7 @@ export function Header() {
           <a href="#" className="flex items-center gap-2.5">
             <Logo />
             <span className="text-lg font-semibold tracking-tight text-[var(--lp-graphite)]">
-              Scatter
+              Pinscaler
             </span>
           </a>
 
