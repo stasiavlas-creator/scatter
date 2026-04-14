@@ -1,5 +1,6 @@
 import { Header } from "@/components/landing/header"
 import { Hero } from "@/components/landing/hero"
+import { WhyPinterest } from "@/components/landing/why-pinterest"
 import { HowItWorks } from "@/components/landing/how-it-works"
 import { Audience } from "@/components/landing/audience"
 import { UseCases } from "@/components/landing/use-cases"
@@ -15,6 +16,7 @@ export default function LandingPage() {
       <Header />
       <main>
         <Hero />
+        <WhyPinterest />
         <HowItWorks />
         <Audience />
         <UseCases />

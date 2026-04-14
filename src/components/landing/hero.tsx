@@ -78,6 +78,14 @@ export function Hero() {
               </a>
             </div>
 
+            {/* Free trial badge */}
+            <div className="mt-5 animate-fade-in-up animation-delay-400">
+              <div className="inline-flex items-center gap-2 rounded-full bg-[var(--lp-green)]/10 border border-[var(--lp-green)]/20 px-4 py-2 text-sm">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[var(--lp-olive)] text-white text-xs font-bold">7</span>
+                <span className="text-gray-600">Free 7-day placement trial — <span className="font-semibold text-[var(--lp-graphite)]">no commitment</span></span>
+              </div>
+            </div>
+
             {/* Mini stats */}
             <div className="mt-14 grid grid-cols-3 gap-6 animate-fade-in-up animation-delay-400">
               <div>

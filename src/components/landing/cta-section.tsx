@@ -51,9 +51,10 @@ export function CtaSection() {
               </a>
             </div>
 
-            <p className="mt-6 text-sm text-gray-400">
-              No commitment required. Typical response within 24 hours.
-            </p>
+            <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-4 py-2">
+              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[var(--lp-green)] text-white text-xs font-bold">7</span>
+              <span className="text-sm text-gray-300">Free 7-day trial included — no commitment required</span>
+            </div>
           </div>
         </div>
       </div>

@@ -10,16 +10,17 @@ const btnBase =
 
 const packages = [
   {
-    name: "Pin Placement",
-    description: "Single pin across selected accounts",
+    name: "Free Trial",
+    description: "Try before you commit — 7 days free",
     features: [
       "1 pin placement",
       "Account selection by niche",
       "Impression reporting",
       "7-day placement period",
     ],
-    cta: "Get started",
+    cta: "Start free trial",
     highlighted: false,
+    badge: "Free",
   },
   {
     name: "Placement Package",
@@ -89,6 +90,11 @@ export function Formats() {
               {pkg.highlighted && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center rounded-full bg-[var(--lp-olive)] px-4 py-1 text-xs font-medium text-white">
                   Most popular
+                </span>
+              )}
+              {"badge" in pkg && pkg.badge && (
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center rounded-full bg-[var(--lp-green)] px-4 py-1 text-xs font-bold text-white">
+                  {pkg.badge}
                 </span>
               )}
 

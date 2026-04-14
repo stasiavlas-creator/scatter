@@ -98,10 +98,22 @@ export function ProductPlacement() {
         </div>
 
         {/* Metrics */}
-        <div className={cn("grid grid-cols-3 gap-4 max-w-xl mx-auto", visible && "animate-fade-in-up animation-delay-500")}>
+        <div className={cn("grid grid-cols-3 gap-4 max-w-xl mx-auto mb-10", visible && "animate-fade-in-up animation-delay-500")}>
           <Metric icon={Eye} target={45200} suffix="" label="Impressions" />
           <Metric icon={Bookmark} target={1200} suffix="" label="Saves" />
           <Metric icon={TrendingUp} target={3} suffix=".8%" label="Engagement" />
+        </div>
+
+        {/* CTA */}
+        <div className={cn("text-center", visible && "animate-fade-in-up animation-delay-600")}>
+          <a
+            href="#cta"
+            className="inline-flex shrink-0 items-center justify-center rounded-xl text-base font-medium transition-all select-none active:translate-y-px bg-[var(--lp-coral)] hover:bg-[var(--lp-coral-dark)] text-white h-12 px-8 gap-2 shadow-lg shadow-[var(--lp-coral)]/20"
+          >
+            Request placement
+            <ArrowRight className="size-4" />
+          </a>
+          <p className="mt-3 text-sm text-gray-400">Includes free 7-day trial placement</p>
         </div>
       </div>
     </section>
