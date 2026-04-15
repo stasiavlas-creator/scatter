@@ -1,37 +1,46 @@
 "use client"
 
-import { Globe, Layout, TrendingUp } from "lucide-react"
+import { Package, Layers, Share2, TrendingUp } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import { SectionHeader } from "./section-header"
 import { cn } from "@/lib/utils"
 
 const steps = [
   {
-    icon: Globe,
-    title: "Curated Network",
+    icon: Package,
+    title: "Your Product",
     description:
-      "132 verified accounts across home, beauty, and lifestyle niches — each built with engaged, real audiences.",
-    stat: "132",
-    statLabel: "accounts",
+      "Share your product — we handle the creative. Your item is styled into native Pinterest content that fits each account's aesthetic.",
+    stat: "1",
+    statLabel: "product",
     color: "#ED6C43",
   },
   {
-    icon: Layout,
-    title: "Content Placement",
+    icon: Layers,
+    title: "Multiple Placements",
     description:
-      "Your products are featured as native pins across relevant accounts, blending seamlessly into organic feeds.",
-    stat: "10.99M",
-    statLabel: "total audience",
+      "Your product is turned into multiple pins and placed across curated accounts in relevant niches — home, beauty, lifestyle.",
+    stat: "60",
+    statLabel: "placements per campaign",
     color: "#BEB050",
   },
   {
-    icon: TrendingUp,
-    title: "Organic Reach",
+    icon: Share2,
+    title: "Distribution",
     description:
-      "Pins generate impressions, saves, and clicks — driving sustained discovery without paid ad spend.",
+      "Pins are posted daily across accounts on a schedule. Distributed posting maximizes organic visibility over the campaign period.",
+    stat: "132",
+    statLabel: "accounts in network",
+    color: "#d4c46a",
+  },
+  {
+    icon: TrendingUp,
+    title: "Cumulative Reach",
+    description:
+      "Each pin compounds over time. Unlike ads, pins keep generating impressions, saves, and clicks for months after posting.",
     stat: "2M+",
     statLabel: "daily impressions",
-    color: "#d4c46a",
+    color: "#D5D5D5",
   },
 ]
 
@@ -58,8 +67,8 @@ export function HowItWorks() {
           tagColor="#BEB050"
         />
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 relative">
-          <div className="hidden md:block absolute top-24 left-[16.6%] right-[16.6%] h-px bg-gradient-to-r from-transparent via-[var(--lp-silver)]/60 to-transparent" />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 relative">
+          <div className="hidden lg:block absolute top-24 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-transparent via-[var(--lp-silver)]/60 to-transparent" />
 
           {steps.map((step, i) => (
             <div
@@ -68,7 +77,8 @@ export function HowItWorks() {
                 "relative text-center",
                 visible && "animate-fade-in-up",
                 i === 1 && "animation-delay-200",
-                i === 2 && "animation-delay-400"
+                i === 2 && "animation-delay-400",
+                i === 3 && "animation-delay-600"
               )}
             >
               <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white border border-gray-100 shadow-sm relative z-10 group hover:shadow-md transition-all duration-300">
