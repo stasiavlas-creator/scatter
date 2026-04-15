@@ -68,7 +68,9 @@ export function Hero() {
                 <ArrowRight className="size-4" />
               </a>
               <a
-                href="#cta"
+                href="/Pinscaler_Media_Kit.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={cn(
                   btnBase,
                   "h-12 px-7 text-base border border-gray-200 bg-white hover:bg-gray-50 text-[var(--lp-graphite)]"

@@ -56,7 +56,9 @@ export function Header() {
           {/* Right: CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="#cta"
+              href="/Pinscaler_Media_Kit.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn(
                 btnBase,
                 "h-8 px-4 text-sm text-gray-500 hover:text-[var(--lp-graphite)]"
