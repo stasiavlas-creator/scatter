@@ -98,7 +98,7 @@ export function ProductPlacement() {
         </div>
 
         {/* Metrics */}
-        <div className={cn("grid grid-cols-3 gap-4 max-w-xl mx-auto mb-10", visible && "animate-fade-in-up animation-delay-500")}>
+        <div className={cn("grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-xl mx-auto mb-10", visible && "animate-fade-in-up animation-delay-500")}>
           <Metric icon={Eye} target={45200} suffix="" label="Impressions" />
           <Metric icon={Bookmark} target={1200} suffix="" label="Saves" />
           <Metric icon={TrendingUp} target={3} suffix=".8%" label="Engagement" />

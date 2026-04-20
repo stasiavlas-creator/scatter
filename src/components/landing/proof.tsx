@@ -8,7 +8,7 @@ import { TrendingUp, Eye, Users as UsersIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const metrics = [
-  { icon: Eye, value: "2M+", label: "Daily impressions", sublabel: "Organic reach across network", color: "#ED6C43" },
+  { icon: Eye, value: "3M+", label: "Daily impressions", sublabel: "Organic reach across network", color: "#ED6C43" },
   { icon: UsersIcon, value: "10.99M", label: "Total reach", sublabel: "Combined audience size", color: "#BEB050" },
   { icon: TrendingUp, value: "3.8%", label: "Avg. engagement rate", sublabel: "Saves, clicks, close-ups", color: "#d4c46a" },
 ]
@@ -80,7 +80,7 @@ export function Proof() {
         <SectionHeader
           tag="Reach & Engagement"
           title="Real numbers from our network"
-          subtitle="Aggregated data across 132 active accounts — not projections."
+          subtitle="Aggregated data across 29,388 active accounts — not projections."
           visible={visible}
           tagColor="#d4c46a"
         />

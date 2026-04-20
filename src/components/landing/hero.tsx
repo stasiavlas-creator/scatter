@@ -40,7 +40,7 @@ export function Hero() {
             <div className="animate-fade-in-up">
               <div className="inline-flex items-center gap-2 rounded-full bg-[var(--lp-blue)]/5 border border-[var(--lp-blue)]/10 px-4 py-1.5 text-sm text-[var(--lp-blue)] mb-8">
                 <span className="flex h-2 w-2 rounded-full bg-[var(--lp-olive)]" />
-                132 active accounts
+                29,388 active accounts
               </div>
             </div>
 
@@ -52,7 +52,7 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 text-lg sm:text-xl text-gray-500 leading-relaxed max-w-lg animate-fade-in-up animation-delay-200">
-              <Counter target={2000000} suffix="+" /> daily impressions
+              <Counter target={3000000} suffix="+" /> daily impressions
               through curated content placement across verified accounts.
             </p>
 
@@ -91,7 +91,7 @@ export function Hero() {
             {/* Audience stats strip */}
             <div className="mt-14 animate-fade-in-up animation-delay-500">
               <p className="text-xs text-gray-400 uppercase tracking-wider mb-4">Network reach</p>
-              <div className="grid grid-cols-4 gap-5">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
                 <div>
                   <p className="text-2xl font-bold text-[var(--lp-graphite)]">
                     <Counter target={10990000} />
@@ -99,7 +99,9 @@ export function Hero() {
                   <p className="text-sm text-gray-400 mt-0.5">Total audience</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-[var(--lp-graphite)]">132</p>
+                  <p className="text-2xl font-bold text-[var(--lp-graphite)]">
+                    <Counter target={29388} />
+                  </p>
                   <p className="text-sm text-gray-400 mt-0.5">Active accounts</p>
                 </div>
                 <div>
@@ -172,7 +174,7 @@ export function Hero() {
                 {/* Stats row */}
                 <div className="grid grid-cols-3 gap-3 pt-2">
                   {[
-                    { icon: Eye, label: "Impressions", val: "2M+" },
+                    { icon: Eye, label: "Impressions", val: "3M+" },
                     { icon: Users, label: "Reach", val: "842K" },
                     { icon: Bookmark, label: "Saves", val: "23.4K" },
                   ].map(({ icon: Icon, label, val }) => (

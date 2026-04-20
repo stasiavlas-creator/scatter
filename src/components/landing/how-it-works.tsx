@@ -29,7 +29,7 @@ const steps = [
     title: "Distribution",
     description:
       "Pins are posted daily across accounts on a schedule. Distributed posting maximizes organic visibility over the campaign period.",
-    stat: "132",
+    stat: "29,388",
     statLabel: "accounts in network",
     color: "#d4c46a",
   },
@@ -38,7 +38,7 @@ const steps = [
     title: "Cumulative Reach",
     description:
       "Each pin compounds over time. Unlike ads, pins keep generating impressions, saves, and clicks for months after posting.",
-    stat: "2M+",
+    stat: "3M+",
     statLabel: "daily impressions",
     color: "#D5D5D5",
   },

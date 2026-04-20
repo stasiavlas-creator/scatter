@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Pinscaler — Scale Your Reach on Pinterest',
-  description: 'Scalable Pinterest growth through curated content placement. 2M+ daily impressions across 132 accounts.',
+  description: 'Scalable Pinterest growth through curated content placement. 3M+ daily impressions across 29,388 accounts.',
 }
 
 export default function RootLayout({

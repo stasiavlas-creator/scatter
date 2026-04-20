@@ -60,7 +60,7 @@ export function Audience() {
         {/* Stats row */}
         <div className={cn("grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14", visible && "animate-fade-in-up animation-delay-100")}>
           <StatCard label="Total audience" value="10.99M" />
-          <StatCard label="Active accounts" value="132" />
+          <StatCard label="Active accounts" value="29,388" />
           <StatCard label="Female audience" value="75.3%" />
           <StatCard label="Key age group" value="25-34" />
         </div>
